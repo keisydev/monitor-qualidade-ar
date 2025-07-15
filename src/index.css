@@ -1,68 +1,63 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis CSS para Cores */
+:root {
+  --primary-bg: #F0F4F8; /* Fundo claro */
+  --primary-text: #334155; /* Texto escuro principal */
+  --secondary-text: #64748B; /* Texto secundário/cinza */
+
+  --accent-color: #007BFF; /* Azul de destaque */
+  --accent-hover: #0056b3; /* Azul de destaque (hover) */
+
+  /* Cores do AQI (Índice de Qualidade do Ar) */
+  --aqi-good: #28A745; /* Verde */
+  --aqi-fair: #FFC107; /* Amarelo */
+  --aqi-moderate: #FD7E14; /* Laranja */
+  --aqi-poor: #DC3545; /* Vermelho */
+  --aqi-very-poor: #6610F2; /* Roxo */
+  --aqi-unknown: #6C757D; /* Cinza */
+
+  /* Sombras e Bordas */
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+
+/* Estilos Globais do Body e Tipografia */
+body {
+  font-family: 'Lato', sans-serif; /* Fonte principal para o corpo */
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased; /* Para melhor renderização de fontes */
+  -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinhar ao topo para o conteúdo */
+  padding: 20px; /* Um pouco de padding geral */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; /* Fonte para títulos */
+  color: var(--primary-text);
+  margin-bottom: 0.5em;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Estilos para a div App */
+#root {
+  width: 100%;
+  max-width: 900px; /* Limita a largura do conteúdo para melhor leitura */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Pequenos estilos utilitários */
+.text-center {
+  text-align: center;
 }

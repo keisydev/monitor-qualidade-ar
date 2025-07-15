@@ -1,0 +1,19 @@
+.aqi-description {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block; /* Para que o padding funcione bem */
+  min-width: 80px; /* Garante uma largura mínima para alinhamento */
+  text-align: center;
+  color: white; /* Cor do texto branco para contrastar com as cores de fundo */
+  /* Transição suave para mudança de cor */
+  transition: background-color 0.3s ease;
+}
+
+/* As classes de cor para o AQI (usando as variáveis globais) */
+.aqi-good { background-color: var(--aqi-good); }
+.aqi-fair { background-color: var(--aqi-fair); }
+.aqi-moderate { background-color: var(--aqi-moderate); }
+.aqi-poor { background-color: var(--aqi-poor); }
+.aqi-very-poor { background-color: var(--aqi-very-poor); }
+.aqi-unknown { background-color: var(--aqi-unknown); }

@@ -1,0 +1,23 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 15px;
+  color: var(--secondary-text); /* Usando a variável global de cor */
+}
+
+.spinner {
+  border: 6px solid var(--primary-bg); /* Cor clara para o fundo do spinner */
+  border-top: 6px solid var(--accent-color); /* Cor de destaque para o spinner giratório */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Animação de rotação */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

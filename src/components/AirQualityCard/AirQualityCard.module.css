@@ -1,0 +1,76 @@
+.air-quality-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  margin-top: 20px;
+}
+
+.air-quality-card h2 {
+  color: var(--primary-text);
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.air-quality-card .last-updated {
+  color: var(--secondary-text);
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.aqi-section {
+  background-color: var(--primary-bg);
+  padding: 15px 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.aqi-section h3 {
+  margin: 0;
+  color: var(--primary-text);
+  font-size: 1.5em;
+  display: flex; /* Para alinhar o texto e o span da descrição */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pollutants-title {
+  color: var(--primary-text);
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.pollutant-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivo */
+  gap: 10px;
+}
+
+.pollutant-list li {
+  background-color: #F8FAFC;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95em;
+  color: var(--secondary-text);
+}
+
+.pollutant-list li span {
+  font-weight: bold;
+  color: var(--primary-text);
+}
+
+.data-source {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: var(--secondary-text);
+}
